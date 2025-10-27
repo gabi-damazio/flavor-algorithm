@@ -20,26 +20,26 @@ main {
 }
 
 /* ------------------------------------------------ */
-/* LÓGICA DO JOGO: Esconder e Mostrar as Fases */
+/* LÓGICA DE VISIBILIDADE DO JOGO */
 /* ------------------------------------------------ */
 
-/* Esconde TODOS os passos (divs com a classe .passo) */
+/* Esconde TODOS os passos que não têm a classe 'ativo' */
 .passo {
     display: none;
 }
 
-/* Mostra APENAS o passo que tem a classe .ativo */
+/* Mostra APENAS o passo que tem a classe 'ativo' */
 .passo.ativo {
     display: block;
 }
 
 /* Estilo para os botões */
 .btn-proximo {
-    display: block; /* Cada botão em sua própria linha */
+    display: block;
     width: 100%;
     padding: 15px;
     margin-top: 15px;
-    background-color: #007bff; /* Azul de Ação */
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
