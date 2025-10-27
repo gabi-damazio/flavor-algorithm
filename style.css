@@ -1,4 +1,4 @@
-/* Configurações básicas */
+ /* Configurações básicas */
 body {
     font-family: sans-serif;
     margin: 0;
@@ -19,16 +19,13 @@ main {
     width: 90%;
 }
 
-/* ------------------------------------------------ */
 /* LÓGICA DE VISIBILIDADE DO JOGO */
-/* ------------------------------------------------ */
-
-/* Esconde TODOS os passos que não têm a classe 'ativo' */
+/* ESSENCIAL: Esconde todos os passos por padrão */
 .passo {
     display: none;
 }
 
-/* Mostra APENAS o passo que tem a classe 'ativo' */
+/* ESSENCIAL: Mostra apenas o passo que tem a classe 'ativo' */
 .passo.ativo {
     display: block;
 }
