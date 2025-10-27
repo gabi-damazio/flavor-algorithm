@@ -1,0 +1,67 @@
+/* Configurações básicas */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+main {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+}
+
+/* ------------------------------------------------ */
+/* LÓGICA DO JOGO: Esconder e Mostrar as Fases */
+/* ------------------------------------------------ */
+
+/* Esconde TODOS os passos (divs com a classe .passo) */
+.passo {
+    display: none;
+}
+
+/* Mostra APENAS o passo que tem a classe .ativo */
+.passo.ativo {
+    display: block;
+}
+
+/* Estilo para os botões */
+.btn-proximo {
+    display: block; /* Cada botão em sua própria linha */
+    width: 100%;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: #007bff; /* Azul de Ação */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-proximo:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos de cabeçalho e texto */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.pergunta-fase {
+    margin-top: 30px;
+    color: #333;
+    font-weight: bold;
+}
